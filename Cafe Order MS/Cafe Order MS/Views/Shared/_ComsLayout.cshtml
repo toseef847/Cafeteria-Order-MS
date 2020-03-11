@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title - Cafeteria Order Management System</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/Css/CustomStyle.css" rel="stylesheet" />
+    @* Font Awesome Kit *@
+    <script src="https://kit.fontawesome.com/ec97f2a83c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top comsnav">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            @Html.ActionLink("Cafe Order MS", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+        </div>
+        <div class="navbar-collapse collapse">
+            <nav>
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home", null, new { @class = "navbar-link" })</li>
+                    <li>@Html.ActionLink("Offers", "Offers", "Home", null, new { @class = "navbar-link" })</li>
+                    <li>@Html.ActionLink("Coupon", "Coupon", "Home", null, new { @class = "navbar-link" })</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home", null, new { @class = "navbar-link" })</li>
+                    <li>@Html.ActionLink("Customers", "Index", "Customer", null, new { @class = "navbar-link" })</li>
+                </ul>
+            </nav>
+
+            <form class="form-inline my-2 my-lg-0">
+                <a href="tel:923034212475">Call Now: 923034212475</a>
+                <ul class="social_links">
+                    <li>Get Social:</li>
+                    <li><a href="https://fb.com/toseef.hasan.56" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="https://twitter.com/toseef_hasan" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+                    <li><a href="https://instagram.com/toseef.hasan" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://wa.me/923034212475" target="_blank"><i class="fab fa-whatsapp-square"></i></a></li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    @RenderSection("hero", required: false)   @*    Render Top section on Home and Coupon Page    *@
+    @RenderSection("ContactForm", required: false)   @*    Render Contact form from Contact us page    *@
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+    </div>
+    <div class="footer">
+        <footer>
+            <p>&copy; @DateTime.Now.Year - All Rights Reserved by University of Education</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

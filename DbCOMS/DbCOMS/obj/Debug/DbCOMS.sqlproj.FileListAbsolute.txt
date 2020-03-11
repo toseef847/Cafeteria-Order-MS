@@ -1,0 +1,5 @@
+C:\Users\Headon\source\repos\DbCOMS\DbCOMS\bin\Debug\DbCOMS.dacpac
+C:\Users\Headon\source\repos\DbCOMS\DbCOMS\bin\Debug\DbCOMS.dll
+C:\Users\Headon\source\repos\DbCOMS\DbCOMS\bin\Debug\DbCOMS.pdb
+C:\Users\Headon\source\repos\DbCOMS\DbCOMS\obj\Debug\DbCOMS.dll
+C:\Users\Headon\source\repos\DbCOMS\DbCOMS\obj\Debug\DbCOMS.pdb

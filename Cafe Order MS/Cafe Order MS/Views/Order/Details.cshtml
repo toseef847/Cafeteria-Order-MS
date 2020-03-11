@@ -1,0 +1,43 @@
+﻿@model Cafe_Order_MS.Models.Orders
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_ComsLayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Orders</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.OrderDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrderDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OrderTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrderTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.OrderID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_ComsLayout.cshtml";
+}
+
+    <div class="main">
+        @* Render the Carousel *@
+
+        @section hero {
+            <div class="hero_cont">
+                <div>
+                    <div class="hero_inr">
+                        <h1 class="welcome_heading">Welcome to Cafeteria Order Management System</h1>
+                    </div>
+                </div>
+            </div>
+        }
+
+            <div class="order_items_cont">
+                <div class="row order_items_all">
+                    <div class="col order_item">
+                        <div>
+                            <img src="~/Content/Images/bun.jpg" />
+                            <p class="name_n_price mt-3">Zinger Burger<span> Rs/-120</span></p>
+                            <button class="btn btn-outline-dark coms-btn">@Html.ActionLink("Order Now", "Create", "Order")</button>
+                        </div>
+                    </div>
+                    <div class="col order_item">
+                        <div>
+                            <img src="~/Content/Images/hamburger.jpg" />
+                            <p class="name_n_price mt-3">Chicken Burger<span> Rs/-180</span></p>
+                            <button class="btn btn-outline-dark coms-btn">@Html.ActionLink("Order Now", "Create", "Order")</button>
+                        </div>
+                    </div>
+                    <div class="col order_item">
+                        <div>
+                            <img src="~/Content/Images/lunch.jpg" />
+                            <p class="name_n_price mt-3">Chicken Shuwarma<span> Rs/-150</span></p>
+                            <button class="btn btn-outline-dark coms-btn">@Html.ActionLink("Order Now", "Create", "Order")</button>
+                        </div>
+                    </div>
+                    <div class="col order_item">
+                        <div>
+                            <img src="~/Content/Images/pizza2.jpg" />
+                            <p class="name_n_price mt-3">Pizza (Small)<span> Rs/-450</span></p>
+                            <button class="btn btn-outline-dark coms-btn">@Html.ActionLink("Order Now", "Create", "Order")</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+

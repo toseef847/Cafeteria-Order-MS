@@ -1,0 +1,424 @@
+﻿::selection {
+    background: #002b3f;
+    color: #fff;
+}
+@font-face {
+    font-family: ur;
+    src: url(../Fonts/ubuntu/Ubuntu-Regular.ttf);
+}
+@font-face {
+    font-family: um;
+    src: url(../Fonts/ubuntu/Ubuntu-Medium.ttf);
+}
+@font-face {
+    font-family: os;
+    src: url(../Fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: pm;
+    src: url(../Fonts/Poppins-Medium.ttf);
+}
+body,ul,li,h1,h2,h3,h4,h5,h6,p{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: ur !important;
+}
+p, a, span, li, button, input, option, select {
+    font-family: os !important;
+    font-size: 16px !important;
+}
+ul,li{
+    list-style: none !important;
+}
+a{
+    text-decoration: none !important;
+}
+label {
+    font-family: os !important;
+    font-size: 16px;
+    font-weight: normal !important;
+}
+.navbar, footer {
+    background: #002b3f;
+}
+.container {
+    margin-top: 50px;
+}
+.comsnav form {
+    width: 49%;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+}
+
+.form-inline.my-2.my-lg-0 > a {
+    color: #fff;
+}
+.social_links {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    color: #fff;
+}
+.social_links > li > a{
+    color: #fff;
+    font-size: 25px !important;
+}
+.carousel-inner {
+    position: relative;
+    display: block;
+    max-height: 500px;
+}
+nav ul > li {
+    position: relative;
+    display: block;
+    background-image: linear-gradient(#fff 0,#fff 100%);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 0 3px;
+    transition: all .4s;
+}
+nav ul > li:hover,nav ul > li:hover a{
+    background-size: 100% 1px;
+    letter-spacing: 2px;
+    transition: all .4s;
+}
+.coms-btn {
+    padding: 10px 30px;
+    box-shadow: 0px 0px 0 0px #002b3f inset;
+    transition: all .4s;
+    border: 2px solid #002b3f;
+}
+.coms-btn:hover {
+	box-shadow: 0px 0px 0 30px #002b3f inset;
+	color: #fff;
+    border-color: #fff;
+}
+/*  HOME PAGE   */
+.hero_cont {
+    position: relative;
+    display: block;
+    width: 100%;
+    min-height: 80vh;
+    background-image: url('../Images/breakfast.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+.hero_cont::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: block;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.6);
+}
+.hero_cont > div {
+	position: relative;
+	z-index: 10;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+.hero_inr {
+    width: 60%;
+    color: #fff;
+    text-align: center;
+}
+.order_items_cont {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 30px 0;
+}
+.row.order_items_all {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    animation: space-around;
+}
+.col.order_item {
+    position: relative;
+    display: block;
+    width: 23%;
+    border: solid 1px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 4px;
+}
+.col.order_item:hover img{
+    transform: scale3d(1.1,1.1,1);
+}
+.col > div > img {
+	width: 100%;
+    transition: all .4s;
+}
+.name_n_price {
+    position: relative;
+    display: block;
+    text-align: left;
+    font-weight: 600;
+}
+.name_n_price > span {
+	float: right;
+}
+/* COUPON PAGE */
+.coupon_pg_cont {
+    position: relative;
+    background-image: url(../Images/notes.jpg);
+    height: 80vh;
+    background-size: contain;
+    background-position: center;
+    display: block;
+    width: 100%;
+}
+.coupon_pg_cont::before {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	background: rgba(0,0,0,0.7);
+}
+.coupon_pg_inr {
+    width: 70%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    height: 100%;
+}
+.coupon_all {
+    width: 100%;
+    position: relative;
+    display: block;
+}
+.coupon_top {
+    text-align: center;
+    color: #fff;
+    margin: 10px 0;
+}
+.coupon_btm {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+.coupon_btm > input {
+	width: 65%;
+	display: block;
+	margin: 10px auto;
+	padding: 20px 15px;
+	font-size: 16px !important;
+	max-width: 100%;
+	text-align: center;
+}
+/*   MENUES PAGE   */
+.Menu_cont {
+    padding: 30px;
+}
+.text-center > h1 {
+    margin-top: 20px !important;
+}
+.deal_cont {
+    position: relative;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+.deal_left {
+    position: relative;
+    width: 39%;
+    display: inline-block;
+}
+.deal_left > div {
+	position: relative;
+	display: block;
+	border: solid #002b3f 2px;
+	margin: 20px 0;
+	padding: 10px;
+	border-radius: 4px;
+}
+.deal_left > div > h2 {
+	background: #002b3f;
+	margin: 0;
+	padding: 10px;
+	text-align: center;
+	border-radius: 4px;
+	color: #fff;
+}
+.left_top div > img,.left_btm div > img {
+    width: 100%;
+}
+.deal_left ul {
+	position: relative;
+	display: block;
+	margin: 20px 0;
+}
+.deal_left ul > li {
+	margin: 10px 0;
+	padding: 10px;
+	border: 1px solid #002b3f;
+	border-left-color: transparent;
+	border-right-color: transparent;
+}
+.deal_right {
+    position: relative;
+    display: inline-block;
+    width: 57%;
+    padding: 10px;
+    border: 2px solid #002b3f;
+    vertical-align: top;
+    border-radius: 4px;
+    margin: 10px;
+}
+.top_heading > h2 {
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    background: #002b3f;
+    border-radius: 4px;
+    color: #fff;
+}
+.so_row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.so_col {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    border: 2px solid #002b3f;
+    margin: 5px;
+    background: #c8e2ed;
+    border-radius: 4px;
+}
+.so_col::after {
+	content: 'New';
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	margin: 5px;
+	padding: 0 5px;
+	border-radius: 9px;
+	background: #002b3f;
+	color: #fff;
+	font-size: 12px;
+}
+/*   MENUES ENDS   */
+
+/*   CONTACT US PAGE   */
+
+.contact_cont {
+    background-image: url('../Images/pizza.jpg');
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-top: 50px;
+}
+.contact_cont::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: rgba(0,0,0,0.6);
+	top: 0;
+	left: 0;
+}
+.contact_inr {
+    position: relative;
+    display: block;
+    z-index: 10;
+    width: 50%;
+    margin: 0 auto;
+    padding: 30px;
+}
+.contact_form > h1 {
+    margin-bottom: 20px !important;
+    color: #fff;
+    text-align: center;
+}
+.contact_form > form {
+    background: rgba(0, 43, 63, 0.7);
+    padding: 30px;
+    border-radius: 4px;
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.contact_form > form > div {
+	margin: 15px 0;
+	display: block;
+	position: relative;
+	width: 100%;
+}
+.form_row label {
+	color: #fff;
+	display: block;
+}
+.form_row input {
+    padding: 20px 10px;
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    max-width: 100%;
+}
+.form_row.form_msg > textarea {
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    resize: vertical;
+    padding: 5px 10px;
+    font-family: os;
+    font-size: 16px;
+    max-width: 100%;
+}
+
+/*   CONTACT US ENDS   */
+/*   FOOTER   */
+.footer {
+    position: sticky;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    height: 50px !important;
+    text-align: center;
+}
+.footer > footer {
+	height: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+footer > p {
+    color: #fff;
+}
